@@ -1,10 +1,11 @@
+#cloud-config
 autoinstall:
     version: 1
     identity:
-        realname: 'Paulo Jr'
+        realname: 'Paulo Roberto Alves Resende Júnior'
         hostname: ubuntu
         username: paulojr
-        password: '$6$qc8l/dqqH5Umignh$sAYz8bhT/E/I7yDpib4wkVBFLzK/j6KUzrB0nT9J.Z6z368chgC16Z10EVvG1iPobrD1ic6eMLdGL6cf1uVmz1'
+        password: '$6$6mym/qpkPW5Kui7f$fLKe6H2QVxr41Rm2rHzQKh4TGa8ecchvKN5wPVxzGoMtcAIwRW2dtS.dsJJYItuBFv28UluCTR72fuycMnBsd.'
     locale: pt_BR.utf8
     keyboard:
         layout: br
@@ -13,16 +14,6 @@ autoinstall:
         - git
         - wget
         - build-essential
-        - curl
-        - iptraf
-        - terminator
-        - python3
-        - python3-venv
-        - ubuntucinnamon-desktop
-        - ubuntucinnamon-wallpapers-noble
-        - gpg
-        - apt-transport-https
-        - sudo
     codecs:
         install: true
     drivers:
