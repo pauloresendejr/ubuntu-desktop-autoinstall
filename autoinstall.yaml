@@ -23,8 +23,6 @@ autoinstall:
         - gpg
         - apt-transport-https
         - sudo
-    ssh:
-      install-server: true
     codecs:
         install: true
     drivers:
