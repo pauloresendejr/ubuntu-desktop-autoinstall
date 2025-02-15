@@ -11,28 +11,28 @@ autoinstall:
         layout: br
     timezone: "America/Sao_Paulo"   
     packages:
+        - sudo
         - git
-        # - wget
-        # - build-essential
-        # - curl
-        # - iptraf
-        # - terminator
-        # - python3
-        # - python3-venv
-        # - ubuntucinnamon-desktop
-        # - ubuntucinnamon-wallpapers-noble
-        # - gpg
-        # - apt-transport-https
-        # - sudo
+        - wget
+        - build-essential
+        - curl
+        - iptraf
+        - terminator
+        - python3
+        - python3-venv
+        - ubuntucinnamon-desktop
+        - ubuntucinnamon-wallpapers-noble
+        - gpg
+        - apt-transport-https
     ssh:
       install-server: true
     # snaps:
     #     - name: spotify
     #       channel: stable
     #       classic: false
-    # codecs:
-    #     install: true
-    # drivers:
-    #     install: true
-    # updates: all
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
     shutdown: reboot
