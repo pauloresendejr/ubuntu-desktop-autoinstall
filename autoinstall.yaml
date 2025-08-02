@@ -38,7 +38,7 @@ autoinstall:
         - bluez
     late-commands:
         # Venv Python        
-        - curtin in-target -- python3 -m venv ubuntu
+        # - curtin in-target -- python3 -m venv ubuntu
         # Edge ' Vscode'        
         # - curtin in-target -- curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
         # - curtin in-target -- echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
