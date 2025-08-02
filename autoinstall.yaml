@@ -40,13 +40,13 @@ autoinstall:
         # Venv Python        
         - curtin in-target -- python3 -m venv ubuntu
         # Edge ' Vscode'        
-        - curtin in-target -- curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
-        - curtin in-target -- echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
-        - curtin in-target -- sudo apt update -y && sudo apt install -y microsoft-edge-stable code
+        # - curtin in-target -- curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
+        # - curtin in-target -- echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
+        # - curtin in-target -- sudo apt update -y && sudo apt install -y microsoft-edge-stable code
         # Chrome
-        - curtin in-target -- sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-        - curtin in-target -- wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-        - curtin in-target -- sudo apt-get update -y && sudo apt-get install google-chrome-stable
+        # - curtin in-target -- sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+        # - curtin in-target -- wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+        # - curtin in-target -- sudo apt-get update -y && sudo apt-get install google-chrome-stable
     ssh:
       install-server: true
     # snaps:
